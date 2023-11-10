@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={`p-2 ${style.basic}`}>
         <div>
           <Link href="/">
-            <h1 className="text-info">陳炫志的Next小站</h1>
+            <h1 className="text-info">Next小站</h1>
           </Link>
         </div>
         <div className={style.navbtn}>
