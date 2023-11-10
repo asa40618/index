@@ -1,10 +1,8 @@
 .cardBody {
   width: fit-content;
-  height: fit-content;
   padding-block: 2rem;
   padding-inline: 2rem;
   background:#F5DAC9;
-  width: 20rem;
 }
 .photo {
   margin: 1rem;
@@ -21,6 +19,9 @@
         list-style: none;
         font-size: 1.5rem;
         justify-content: space-evenly;
+        a{
+          color: black;
+        }
     }
     
 }

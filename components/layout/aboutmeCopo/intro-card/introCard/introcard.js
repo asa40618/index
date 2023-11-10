@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import style from './introCard.module.scss'
-import { AiFillFacebook, AiFillGithub } from 'react-icons/ai'
-import { BiLogoGmail } from 'react-icons/bi'
+import { AiFillFacebook, AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 
 export default function Introcard() {
   return (
@@ -14,17 +13,22 @@ export default function Introcard() {
         <div className="m-2 border-bottom">
           <p className="h1 text-center">陳炫志</p>
         </div>
-        <div className="text-center">前端工程師</div>
         <div className={style.icon}>
           <ul>
             <li>
-              <AiFillFacebook />
+              <a href="https://www.facebook.com/profile.php?id=100004031783892">
+                <AiFillFacebook />
+              </a>
             </li>
             <li>
-              <AiFillGithub />
+              <a href="https://github.com/asa40618?tab=repositories">
+                <AiFillGithub />
+              </a>
             </li>
             <li>
-              <BiLogoGmail />
+              <a href="https://twitter.com/JXf13ZEz4WMgn9P">
+                <AiOutlineTwitter />
+              </a>
             </li>
           </ul>
         </div>

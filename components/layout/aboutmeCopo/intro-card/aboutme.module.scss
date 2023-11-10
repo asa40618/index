@@ -1,8 +1,21 @@
 .background{
     display: flex;
+    width: fit-content;
     position: relative;
-    left: 20vw;
+    left: 10rem;
     top: 2rem;
     background: #ffffff;
-    
+    ul{
+        list-style: none;
+        display: flex;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        flex-wrap: wrap;
+        img{
+            object-fit: contain;
+        }
+    }
+}
+.innerText{
+    margin: 3rem;
 }
