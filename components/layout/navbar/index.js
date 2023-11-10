@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className={style.navbtn}>
           <ul>
             <li>
-              <Link href="/aboutme">About Me</Link>
+              <Link href="/">About Me</Link>
             </li>
             <li>
               <Link href="/resume">Resume</Link>
