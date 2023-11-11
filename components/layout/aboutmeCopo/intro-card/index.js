@@ -13,6 +13,8 @@ export default function AboutmeIndex() {
     'Node.js_logo.svg',
     'ExpressJS-logo.png',
     'Figma-logo.svg',
+    'git.jpg',
+    'githib.jpg',
   ]
   return (
     <>
