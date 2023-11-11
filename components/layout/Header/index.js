@@ -2,7 +2,7 @@ import React from 'react'
 import style from './navbar.module.scss'
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Header() {
   return (
     <>
       <div className={`p-2 ${style.basic}`}>
