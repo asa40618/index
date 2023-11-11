@@ -23,7 +23,7 @@ export default function AboutmeIndex() {
           <div className={`${style.background} shadow`}>
             <Introcard />
             <div className={`${style.innerText} `}>
-              <h1>您好！</h1>
+              <h2>您好！</h2>
               <h2>我是陳炫志</h2>
               <p>
                 原本就讀於護理系，因對前端工作有興趣在畢業後開始學習相關知識，於2023於資展國際前端工程師班結業。

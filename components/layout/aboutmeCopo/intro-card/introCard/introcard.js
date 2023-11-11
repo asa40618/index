@@ -11,7 +11,7 @@ export default function Introcard() {
           <Image src="/profilePhoto.jpg" height={225} width={200}></Image>
         </div>
         <div className="m-2 border-bottom">
-          <p className="h1 text-center">陳炫志</p>
+          <p className="h2 text-center">陳炫志</p>
         </div>
         <div className={style.icon}>
           <ul>

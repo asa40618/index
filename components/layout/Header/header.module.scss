@@ -1,5 +1,6 @@
 .basic {
   height: 10rem;
+  padding-inline: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,13 +22,12 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    :hover{
-        color: #4d57e0;
+    :hover {
+      color: #4d57e0;
     }
   }
   a {
     color: black;
-    font-weight: 100;
-   
+  font-weight: 200;
   }
 }

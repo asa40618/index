@@ -1,11 +1,12 @@
-import React from 'react'
-import style from './navbar.module.scss'
+import React, { useState } from 'react'
+import style from './header.module.scss'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Header() {
   return (
     <>
-      <div className={`p-2 ${style.basic}`}>
+      <div className={style.basic}>
         <div>
           <Link href="/">
             <h1 className="text-info">Next小站</h1>
@@ -13,7 +14,7 @@ export default function Header() {
         </div>
         <div className={style.navbtn}>
           <ul>
-            <li>
+            <li active>
               <Link href="/">About Me</Link>
             </li>
             <li>
@@ -21,9 +22,6 @@ export default function Header() {
             </li>
             <li>
               <Link href="/project">Project</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

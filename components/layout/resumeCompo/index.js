@@ -19,7 +19,7 @@ export default function ResumeComponent() {
 
   return (
     <>
-      <div className="bg-primary">
+      <div>
         <div className={`container ${style.background}`}>
           <h2 className="text-center">經歷</h2>
           {resume.map((item, index) => {

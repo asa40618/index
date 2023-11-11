@@ -1,0 +1,29 @@
+.background {
+  height: 100vh;
+  padding-block: 2rem;
+}
+.outerbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.projectCard {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  column-gap: 2rem;
+  margin-block: 1rem;
+  background: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: #4d57e0;
+    }
+  }
+}
+
+.innerText {
+  justify-content: center;
+}

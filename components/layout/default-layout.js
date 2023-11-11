@@ -1,11 +1,11 @@
-import Navbar from './Header'
+import Header from './Header'
 import Footer from './footer/footer'
 
 export default function DefaultLayout({ children }) {
   return (
     <>
-      <Navbar />
-      <main>{children}</main>
+      <Header />
+      <main className="bg-primary">{children}</main>
       <Footer />
     </>
   )
