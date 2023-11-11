@@ -3,9 +3,5 @@ import ResumeComponent from '@/components/layout/resumeCompo'
 import React from 'react'
 
 export default function Resume() {
-  return (
-    <DefaultLayout>
-      <ResumeComponent />
-    </DefaultLayout>
-  )
+  return <ResumeComponent />
 }
