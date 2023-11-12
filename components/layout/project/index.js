@@ -9,7 +9,7 @@ export default function ProjectComponents() {
       data: 'oasis.png',
       date: '2023年10月',
       content: '資展國際專題製作-Oasis',
-      href: 'https://www.cakeresume.com/dashboard/resumes?ref=dashboard_navs_resumes',
+      href: 'https://side-project-frontend-iota.vercel.app/',
     },
   ]
   return (
@@ -31,10 +31,9 @@ export default function ProjectComponents() {
                   <div className={style.innerText}>
                     <h3>{item.content}</h3>
                     <p>{item.date}</p>
-                    <a href="{item.href}">
+                    <a href={item.href}>
                       <AiOutlineLink />
-                      &nbsp;
-                      連結點我
+                      &nbsp; 連結點我
                     </a>
                   </div>
                 </div>
