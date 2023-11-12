@@ -3,6 +3,11 @@
   padding-block: 2rem;
   padding-inline: 2rem;
   background:#F5DAC9;
+  border-radius:  1rem 0 0 1rem;
+  @media screen and (max-width: 480px) {
+    border-radius: 1rem;
+    
+  }
 }
 .photo {
   margin: 1rem;

@@ -1,8 +1,16 @@
 .footerBody {
   margin-block: 5rem;
   padding-inline: 2rem;
+  @media screen and (max-width: 480px) {
+    margin-block: 2rem;
+  }
 }
 .profile {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 480px) {
+    row-gap: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

@@ -34,7 +34,7 @@ export default function ProjectComponents() {
                     <a href="{item.href}">
                       <AiOutlineLink />
                       &nbsp;
-                      {item.href}
+                      連結點我
                     </a>
                   </div>
                 </div>

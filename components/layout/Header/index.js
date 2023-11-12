@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 export default function Header() {
   return (
     <>
-      <div className={style.basic}>
+      <div className={` ${style.basic}`}>
         <div>
           <Link href="/">
             <h1 className="text-info">Next小站</h1>
