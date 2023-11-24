@@ -3,7 +3,7 @@ import style from './aboutme.module.scss'
 import Introcard from './introCard/introcard'
 import Image from 'next/image'
 
-export default function AboutMe() {
+export default function AboutMeComponent() {
   const toolbar = [
     'front3.webp',
     'Reacticon.svg',
