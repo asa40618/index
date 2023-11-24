@@ -1,9 +1,9 @@
 import React from 'react'
-import style from './aboutme.module.scss'
-import Introcard from './introCard/introcard'
+import style from './about.module.scss'
 import Image from 'next/image'
+import IntroCard from './introCard'
 
-export default function AboutMeComponent() {
+export default function AboutComponent() {
   const toolbar = [
     'front3.webp',
     'Reacticon.svg',
@@ -21,7 +21,7 @@ export default function AboutMeComponent() {
       <div className="d-flex">
         <div className="col-sm-10 bg-primary">
           <div className={`${style.background}`}>
-            <Introcard />
+            <IntroCard />
             <div className={`${style.innerText} `}>
               <h2 className="text-center text-sm-start">您好！我是陳炫志！</h2>
 

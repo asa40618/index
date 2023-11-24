@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from './header.module.scss'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { Button } from '@mui/material'
 import HeaderPhoneNav from './headerPhoneNav'
 
 export default function Header() {
-  const LinkString = ['AboutMe', 'Resume', 'Project']
+  const LinkString = ['about', 'resume', 'project']
   return (
     <>
       <div className={` ${style.headerBlock}`}>
@@ -21,15 +20,15 @@ export default function Header() {
         <div className={style.navbtn}>
           <ul>
             <li>
-              <Button>
-                <Link href="/">Home</Link>
-              </Button>
+              <Link href="/">
+                <Button>Home</Button>
+              </Link>
             </li>
             {LinkString.map((text, index) => (
               <li key={index}>
-                <Button>
-                  <Link href={`/${text}`}>{text}</Link>
-                </Button>
+                <Link href={`/${text}`}>
+                  <Button>{text}</Button>
+                </Link>
               </li>
             ))}
           </ul>

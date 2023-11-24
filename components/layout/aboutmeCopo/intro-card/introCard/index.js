@@ -3,7 +3,7 @@ import Image from 'next/image'
 import style from './introCard.module.scss'
 import { AiFillFacebook, AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 
-export default function Introcard() {
+export default function IntroCard() {
   return (
     <>
       <div className={`shadow ${style.cardBody}`}>

@@ -43,9 +43,9 @@ export default function HeaderPhoneNav() {
             </ListItemButton>
           </ListItem>
         </Link>
-        {['AboutMe', 'Resume', 'Project'].map((text, index) => (
+        {['about', 'resume', 'project'].map((text, index) => (
           <Link
-            key={text}
+            key={index}
             href={`/${text} `}
             underline="none"
             className="text-info"
