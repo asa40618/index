@@ -1,6 +1,9 @@
-import AboutmeIndex from '@/components/layout/aboutmeCopo/intro-card'
-import DefaultLayout from '@/components/layout/default-layout'
+import Homepage from '@/components/layout/homepage'
 
 export default function Home() {
-  return <AboutmeIndex />
+  return (
+    <>
+      <Homepage />
+    </>
+  )
 }
