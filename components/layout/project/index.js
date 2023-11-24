@@ -23,10 +23,11 @@ export default function ProjectComponents() {
                 <div className={style.projectCard}>
                   <div>
                     <Image
-                      src={`/${item.data}`}
+                      src={`/image/${item.data}`}
                       height={200}
                       width={400}
-                    ></Image>
+                      alt="item.data"
+                    />
                   </div>
                   <div className={style.innerText}>
                     <h3>{item.content}</h3>

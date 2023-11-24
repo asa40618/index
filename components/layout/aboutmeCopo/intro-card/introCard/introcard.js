@@ -8,7 +8,12 @@ export default function Introcard() {
     <>
       <div className={`shadow ${style.cardBody}`}>
         <div className={style.photo}>
-          <Image src="/profilePhoto.jpg" height={225} width={200}></Image>
+          <Image
+            src="/image/profilePhoto.jpg"
+            height={225}
+            width={200}
+            alt="profilePhoto.jpg"
+          />
         </div>
         <div className="m-2 border-bottom">
           <p className="h2 text-center">陳炫志</p>
