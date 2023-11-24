@@ -33,13 +33,15 @@ export default function AboutMe() {
               <ul>
                 {toolbar.map((tool, index) => {
                   return (
-                    <li key={index} className="col-5 col-sm">
-                      <Image
-                        src={`/image/${tool}`}
-                        width={110}
-                        height={80}
-                        alt="/image/${tool}"
-                      />
+                    <li key={index}>
+                      <div className="col-5 col-sm">
+                        <Image
+                          src={`/image/${tool}`}
+                          width={110}
+                          height={80}
+                          alt="/image/${tool}"
+                        />
+                      </div>
                     </li>
                   )
                 })}
