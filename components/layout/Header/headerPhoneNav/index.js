@@ -62,7 +62,7 @@ export default function HeaderPhoneNav() {
   )
 
   return (
-    <div>
+    <div className='d-sm-none'>
       {['right'].map((anchor) => (
         <div key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>

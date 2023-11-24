@@ -1,13 +1,12 @@
 import React from 'react'
 import style from './homepage.module.scss'
-import Button from '@mui/material/Button'
 
 export default function Homepage() {
   return (
     <>
       <div className={style.main}>
         <div className="d-flex h-100 align-items-center container">
-          <div className={`${style.dialog} col-5`}>
+          <div className={`${style.dialog} `}>
             <div>
               <h1>您好！我是陳炫志</h1>
               <p>

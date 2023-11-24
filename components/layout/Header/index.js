@@ -6,6 +6,7 @@ import { Button } from '@mui/material'
 import HeaderPhoneNav from './headerPhoneNav'
 
 export default function Header() {
+  const LinkString = ['AboutMe', 'Resume', 'Project']
   return (
     <>
       <div className={` ${style.headerBlock}`}>
@@ -24,23 +25,16 @@ export default function Header() {
                 <Link href="/">Home</Link>
               </Button>
             </li>
-            <li>
-              <Button>
-                <Link href="/aboutme">About Me</Link>
-              </Button>
-            </li>
-            <li>
-              <Button>
-                <Link href="/resume">Resume</Link>
-              </Button>
-            </li>
-            <li>
-              <Button>
-                <Link href="/project">Project</Link>
-              </Button>
-            </li>
+            {LinkString.map((text, index) => (
+              <li key={index}>
+                <Button>
+                  <Link href={`/${text}`}>{text}</Link>
+                </Button>
+              </li>
+            ))}
           </ul>
         </div>
+        {/* 手機板header，scss module 有設定手機板才出現 */}
         <HeaderPhoneNav />
       </div>
     </>
