@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import style from './header.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { Button } from '@mui/material'
+import HeaderPhoneNav from './headerPhoneNav'
 
 export default function Header() {
   return (
@@ -13,24 +15,33 @@ export default function Header() {
               <h1 className="text-info">Next小站</h1>
             </Link>
           </div>
-          <h4>初次建立的小站</h4>
+          <h4 className="d-none d-sm-block">初次建立的小站</h4>
         </div>
         <div className={style.navbtn}>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Button>
+                <Link href="/">Home</Link>
+              </Button>
             </li>
             <li>
-              <Link href="/aboutme">About Me</Link>
+              <Button>
+                <Link href="/aboutme">About Me</Link>
+              </Button>
             </li>
             <li>
-              <Link href="/resume">Resume</Link>
+              <Button>
+                <Link href="/resume">Resume</Link>
+              </Button>
             </li>
             <li>
-              <Link href="/project">Project</Link>
+              <Button>
+                <Link href="/project">Project</Link>
+              </Button>
             </li>
           </ul>
         </div>
+        <HeaderPhoneNav />
       </div>
     </>
   )
