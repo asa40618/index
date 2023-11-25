@@ -15,7 +15,6 @@ export default function Header() {
               <h1 className="text-info">Next小站</h1>
             </Link>
           </div>
-          <h4 className="d-none d-sm-block">初次建立的小站</h4>
         </div>
         <div className={style.navbtn}>
           <ul>
