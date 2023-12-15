@@ -4,13 +4,16 @@ import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
+import { AnimatePresence } from 'framer-motion'
 
 export default function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
   return (
     <>
-      <DefaultLayout>{getLayout(<Component {...pageProps} />)}</DefaultLayout>
+      <AnimatePresence>
+        <DefaultLayout>{getLayout(<Component {...pageProps} />)}</DefaultLayout>
+      </AnimatePresence>
     </>
   )
 }

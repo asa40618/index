@@ -5,7 +5,7 @@ import { Button } from '@mui/material'
 import HeaderPhoneNav from './headerPhoneNav'
 
 export default function Header() {
-  const LinkString = ['about', 'resume', 'project']
+  const linkString = ['about', 'resume', 'project']
   return (
     <>
       <div className={` ${style.headerBlock}`}>
@@ -23,7 +23,7 @@ export default function Header() {
                 <Button>Home</Button>
               </Link>
             </li>
-            {LinkString.map((text, index) => (
+            {linkString.map((text, index) => (
               <li key={index}>
                 <Link href={`/${text}`}>
                   <Button>{text}</Button>

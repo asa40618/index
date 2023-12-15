@@ -43,6 +43,7 @@ $paragraph-margin-bottom: 0;
 
 // 定義中文字體用
 body {
+  overflow-y: scroll;
   font-family: 'Taipei Sans TC Beta', 'Jiao Std W8', 'SoukouMincho',
     'Noto Sans TC Regular', 'PingFang TC', '苹方-繁', 'Heiti TC', '黑體-繁',
     'Microsoft JhengHei', '微軟正黑體', Helvetica, Arial,
