@@ -13,7 +13,7 @@ export default function Homepage() {
                 歡迎來到我的小站，這裡是我初次嘗試建立的小站
                 <br />
                 建置這個小站的目的是為了更多練習 React.js
-                <br/>
+                <br />
                 很高興認識你！
               </p>
             </div>

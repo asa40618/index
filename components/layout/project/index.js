@@ -27,6 +27,7 @@ export default function ProjectComponents() {
                       height={200}
                       width={400}
                       alt="item.data"
+                      priority={true}
                     />
                   </div>
                   <div className={style.innerText}>

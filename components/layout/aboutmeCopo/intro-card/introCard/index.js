@@ -13,6 +13,7 @@ export default function IntroCard() {
             height={225}
             width={200}
             alt="profilePhoto.jpg"
+            priority={true}
           />
         </div>
         <div className="m-2 border-bottom">
