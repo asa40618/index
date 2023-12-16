@@ -1,12 +1,18 @@
 import React from 'react'
 import style from './homepage.module.scss'
+import { motion } from 'framer-motion'
 
 export default function Homepage() {
   return (
     <>
       <div className={style.main}>
         <div className="d-flex h-100 align-items-center container">
-          <div className={`${style.dialog} `}>
+          <motion.div
+            className={`${style.dialog} `}
+            initial={{ opacity: 0 }}
+            animate={{ x: 50, opacity: 1 }}
+            transition={{ ease: 'easeOut', duration: 2 }}
+          >
             <div>
               <h1>您好！我是陳炫志</h1>
               <p>
@@ -17,7 +23,7 @@ export default function Homepage() {
                 很高興認識你！
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
