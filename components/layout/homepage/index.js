@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './homepage.module.scss'
 import { motion } from 'framer-motion'
+import { Button } from '@mui/material'
 
 export default function Homepage() {
   return (

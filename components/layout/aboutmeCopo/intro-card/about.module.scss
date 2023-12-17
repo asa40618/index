@@ -1,9 +1,18 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 14rem);
+  @media screen and (max-width: 480px) {
+    align-items: normal;
+    height: fit-content;
+  }
+}
 .background {
   display: flex;
-  width: fit-content;
   position: relative;
-  left: 10rem;
-  top: 2rem;
+  justify-content: center;
+  align-items: center;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
