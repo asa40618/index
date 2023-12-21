@@ -19,7 +19,7 @@ export default function AboutComponent() {
   return (
     <>
       <div className={`${style.main}`}>
-        <div className="col-sm-10 bg-primary">
+        <div className="col-sm-10">
           <div className={`${style.background}`}>
             <IntroCard />
             <div className={`${style.innerText} `}>

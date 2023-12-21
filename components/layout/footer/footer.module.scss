@@ -1,9 +1,7 @@
 .footerBody {
-  margin-block: 2em;
-  padding-inline: 2rem;
-  @media screen and (max-width: 480px) {
-    margin-block: 2rem;
-  }
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.876);
+ 
 }
 .profile {
   display: flex;
