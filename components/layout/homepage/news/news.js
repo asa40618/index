@@ -2,10 +2,11 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import style from './news.module.scss'
 import { Skeleton } from '@mui/material'
+import Image from 'next/image'
 
 export default function News() {
+  // 新聞API
   const [newsResourse, setNewsResourse] = useState([])
-
   useEffect(() => {
     const fetchNews = async () => {
       try {
@@ -31,29 +32,32 @@ export default function News() {
     fetchNews()
   }, [])
 
+  // console.log(newsResourse)
   return (
     <div className={style.newsContext}>
+      <p>今日新聞</p>
       {newsResourse.map((item, index) => (
         <a key={index} href={item.url}>
-          <div className={`row ${style.newsBlock}`}>
+          <div className={`row ${style.newsArea}`}>
             <div className={`${style.newsImage} col-4`}>
-              {item.urlToImage ? (
-                <img src={item.urlToImage} alt="news" />
+              {item.urlToImage === null ? (
+                <Image
+                  src="/image/no-image-icon.png"
+                  width={210}
+                  height={118}
+                  alt="no image"
+                />
               ) : (
-                <Skeleton variant="rectangular" width={210} height={118} />
+                <img src={item.urlToImage} alt="news" />
               )}
             </div>
             <div className="col-8">
-              {item.title ? <p>{item.title}</p> : <Skeleton variant="text" />}
-              {item.author ? (
-                <h6>
-                  {item.author}
-                  <br />
-                  {item.publishedAt}
-                </h6>
+              {item.title ? <h4>{item.title}</h4> : <Skeleton variant="text" />}
+              {item.author === null ? <h6>匿名</h6> : <h6>{item.author}</h6>}
+              {item.publishedAt ? (
+                <h6>{item.publishedAt}</h6>
               ) : (
                 <>
-                  <Skeleton variant="text" />
                   <Skeleton variant="text" />
                 </>
               )}
