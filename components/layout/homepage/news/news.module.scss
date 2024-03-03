@@ -1,4 +1,7 @@
 .newsContext {
+  // height: 10rem;
+  width: 30rem;
+  // display: flex;
   a {
     text-decoration: none;
     color: black;
@@ -6,6 +9,8 @@
   .newsArea {
     padding-block: 0.5rem;
     align-items: center;
+    // width: 10rem;
+    // overflow: hidden;
     .newsImage {
       height: 6em;
       overflow: hidden;
@@ -16,7 +21,7 @@
         height: 100%;
       }
     }
-    p{
+    p {
       margin-bottom: 0.5rem;
     }
   }
