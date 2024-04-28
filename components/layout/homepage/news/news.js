@@ -1,8 +1,9 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import style from './news.module.scss'
 import { Skeleton } from '@mui/material'
 import Image from 'next/image'
+import { set } from 'lodash'
 
 export default function News() {
   // 新聞API
@@ -15,28 +16,33 @@ export default function News() {
       const articles = response.data.articles
       const randomThreeNews = []
       const selectedIndexes = new Set()
+      const articlesAfterFilter = articles.filter(
+        (item) => item.title !== "[Removed]"
+      )
+      console.log(articlesAfterFilter)
 
       while (randomThreeNews.length < 3) {
-        const randomIndex = Math.floor(Math.random() * articles.length)
+        const randomIndex = Math.floor(
+          Math.random() * articlesAfterFilter.length
+        )
+        // console.log(randomIndex)
         if (!selectedIndexes.has(randomIndex)) {
-          randomThreeNews.push(articles[randomIndex])
+          const randomNews = articles[randomIndex]
+          randomNews.publishedAt = randomNews.publishedAt.slice(0, 10)
+          randomThreeNews.push(randomNews)
           selectedIndexes.add(randomIndex)
         }
       }
-      const newpublishedAt = randomThreeNews[0].publishedAt.split('T')
-      randomThreeNews[0].publishedAt =
-        newpublishedAt[0] + ' ' + newpublishedAt[1].split('Z')[0]
 
       setNewsResourse(randomThreeNews)
     } catch (error) {
       console.error('新聞異常連線', error)
     }
   }
+
   useEffect(() => {
     fetchNews()
   }, [])
-
-  // console.log(newsResourse)
   return (
     <div>
       <p>今日新聞</p>
